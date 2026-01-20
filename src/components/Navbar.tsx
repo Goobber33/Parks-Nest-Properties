@@ -16,12 +16,10 @@ const Navbar = () => {
 
   const handleLinkClick = () => {
     closeMenu()
-    // Use instant scroll to prevent visible scrolling animation
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'auto'
-    })
+    // Disable smooth scroll temporarily
+    document.documentElement.classList.add('no-smooth-scroll')
+    // Immediately set scroll position before navigation
+    window.scrollTo(0, 0)
     document.documentElement.scrollTop = 0
     document.body.scrollTop = 0
   }
@@ -37,8 +35,8 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-wrapper">
           <Link to="/" className="logo" onClick={handleLinkClick}>
-            <img src="https://windriverpartners.net/wp-content/uploads/2024/08/Logo-Realuxe.png" alt="Wind River Partners" className="logo-img" />
-            <span className="logo-text">WIND RIVER PARTNERS</span>
+            <img src="https://windriverpartners.net/wp-content/uploads/2024/08/Logo-Realuxe.png" alt="Parks Nest Properties" className="logo-img" />
+            <span className="logo-text">PARKS NEST PROPERTIES</span>
           </Link>
           <button 
             className={`mobile-menu-toggle ${isMenuOpen ? 'active' : ''}`}

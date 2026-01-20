@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="container">
-          <p>&copy; Copyright 2024. Wind River Partners All Rights Reserved</p>
+          <p>&copy; Copyright 2024. Parks Nest Properties All Rights Reserved</p>
         </div>
       </div>
     </footer>

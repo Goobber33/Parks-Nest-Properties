@@ -15,10 +15,10 @@ const About = () => {
           <div className="about-content fadeInRight">
             <div className="section-header">
               <h2 className="section-title">ABOUT US</h2>
-              <h3 className="section-subtitle">Wind River Partners</h3>
+              <h3 className="section-subtitle">Parks Nest Properties</h3>
             </div>
             <p>
-              <strong>Wind River Partners</strong> is a real estate investment company that was founded in 2022. We buy various types of homes located within the USA, such as distressed homes, homes that require repairs, homes that are being sold "as is," vacant homes, homes with renters, inherited homes, and much more. Each home we purchase is evaluated based on our specific buying criteria.
+              <strong>Parks Nest Properties</strong> is a real estate investment company that was founded in 2022. We buy various types of homes located within the USA, such as distressed homes, homes that require repairs, homes that are being sold "as is," vacant homes, homes with renters, inherited homes, and much more. Each home we purchase is evaluated based on our specific buying criteria.
             </p>
             <Link to="/contact" className="btn btn-secondary">Learn More</Link>
           </div>
