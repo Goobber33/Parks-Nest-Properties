@@ -1,0 +1,66 @@
+.contact-cta {
+  background: var(--white);
+  color: rgb(0, 27, 29);
+  padding: 100px 0 160px;
+  position: relative;
+}
+
+.contact-cta::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background-image: url('https://windriverpartners.net/wp-content/uploads/2024/08/Photovoltaic-solar-panels-system-on-the-roof-of-the-modern-housee.png');
+  background-size: auto;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.contact-cta-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-cta-content {
+  text-align: left;
+}
+
+.contact-cta-content .section-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.contact-cta .section-title,
+.contact-cta .section-description {
+  color: rgb(0, 27, 29);
+}
+
+.contact-cta-image {
+  width: 100%;
+}
+
+.contact-cta-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .contact-cta-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-cta-content {
+    text-align: center;
+  }
+
+  .contact-cta-content .section-header {
+    text-align: center;
+  }
+}

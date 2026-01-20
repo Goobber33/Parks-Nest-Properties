@@ -1,0 +1,65 @@
+.testimonials {
+  background-image: url('https://windriverpartners.net/wp-content/uploads/2024/08/Photovoltaic-solar-panels-system-on-the-roof-of-the-modern-housee.png');
+  background-size: auto;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-color: var(--background-color);
+  padding: 80px 0;
+  position: relative;
+}
+
+.testimonials-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-image {
+  width: 100%;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.testimonial-card {
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-card h4 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.testimonial-card p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.testimonial-author {
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .testimonials-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

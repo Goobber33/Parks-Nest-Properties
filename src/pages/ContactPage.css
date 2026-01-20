@@ -1,0 +1,116 @@
+.contact-page {
+  width: 100%;
+}
+
+.contact-page-hero {
+  background: rgb(0, 27, 29);
+  color: var(--white);
+  padding: 100px 0 80px;
+  text-align: center;
+}
+
+.contact-page-hero .section-title {
+  color: var(--white);
+}
+
+.contact-page-content {
+  background: var(--white);
+  padding: 80px 0;
+}
+
+.contact-page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-page-heading {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.contact-page-description {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.contact-page-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-detail-item {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.contact-detail-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-detail-item a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.contact-page-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--background-color);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page-form label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.contact-page-form input,
+.contact-page-form textarea {
+  padding: 12px;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.contact-page-form input:focus,
+.contact-page-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.contact-page-form textarea {
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .contact-page-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-page-form {
+    padding: 2rem;
+  }
+}

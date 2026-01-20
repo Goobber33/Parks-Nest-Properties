@@ -1,0 +1,44 @@
+.why-hired {
+  background: rgb(0, 27, 29);
+  padding: 0 0 80px;
+  color: var(--white);
+}
+
+.hired-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.hired-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+.hired-card h4 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hired-card p {
+  color: var(--text-color);
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.why-hired .section-title,
+.why-hired .section-subtitle {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .hired-grid {
+    grid-template-columns: 1fr;
+  }
+}
